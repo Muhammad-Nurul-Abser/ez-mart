@@ -1,0 +1,93 @@
+
+.beforenav{
+    width: 100%;
+    height: 3.5rem;
+    .navigation{
+        width: 100%;
+        height: 100%;
+        img{
+            height: 100%;
+        }
+        .social-media{
+            p{
+                height: 100%;
+                a{
+                    text-decoration: none;
+                    font-size: 15px;
+                    .fa-facebook-f{
+                        color: gray;
+                        border: 0.5px solid;
+                        border-radius: 50%;
+                        margin-right: 10px;
+                        padding: 0.5rem 0.7rem;
+                        background-color: white;
+                        &:hover{
+                            color: white;
+                            background-color: rgb(255, 196, 0);
+                        }
+                    }
+                    .fa-twitter{
+                        color: gray;
+                        border: 0.5px solid;
+                        border-radius: 50%;
+                        margin-right: 10px;
+                        padding: 0.5rem 0.5rem;
+                        background-color: white;
+                        &:hover{
+                            color: white;
+                            background-color: rgb(255, 196, 0);
+                        }
+                    }
+                    .fa-instagram{
+                        margin-right: 10px;
+                        color: gray;
+                        border: 0.5px solid;
+                        padding: 0.5rem 0.6rem;
+                        border-radius: 50%;
+                        background-color: white;
+                        &:hover{
+                            color: white;
+                            background-color: rgb(255, 196, 0);
+                        }
+                    }
+                    .fa-dribbble{
+                        margin-right: 10px;
+                        color: gray;
+                        border: 0.5px solid;
+                        padding: 0.5rem 0.5rem;
+                        border-radius: 50%;
+                        background-color: white;
+                        &:hover{
+                            color: white;
+                            background-color: rgb(255, 196, 0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// dropdown hover
+// @media screen and (min-width:991px) {
+// 	.dropdown {
+// 		&:hover {
+// 			.dropdown-menu {
+// 				display: block;
+// 				margin-top: 0;
+// 			}
+// 			.dropdown-toggle {
+// 				&::after {
+// 					border-top: 0;
+// 				}
+// 			}
+// 		}
+// 		.dropdown-menu {
+// 			display: none;
+// 		}
+// 	}
+// }
+// dropdown hover end
+
+// dropdown aniomation
+

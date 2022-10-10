@@ -28,11 +28,13 @@
   margin-right: 10px;
   padding: 0.5rem 0.7rem;
   background-color: white;
+  -webkit-transition: all .45s ease-Out;
+  transition: all .45s ease-Out;
 }
 
 .beforenav .navigation .social-media p a .fa-facebook-f:hover {
-  color: white;
-  background-color: #ffc400;
+  color: #185be2;
+  border: 0.5px solid white;
 }
 
 .beforenav .navigation .social-media p a .fa-twitter {
@@ -42,11 +44,13 @@
   margin-right: 10px;
   padding: 0.5rem 0.5rem;
   background-color: white;
+  -webkit-transition: all .45s ease-Out;
+  transition: all .45s ease-Out;
 }
 
 .beforenav .navigation .social-media p a .fa-twitter:hover {
-  color: white;
-  background-color: #ffc400;
+  color: #1DA1F2;
+  border: 0.5px solid white;
 }
 
 .beforenav .navigation .social-media p a .fa-instagram {
@@ -56,11 +60,15 @@
   padding: 0.5rem 0.6rem;
   border-radius: 50%;
   background-color: white;
+  -webkit-transition: all .45s ease-Out;
+  transition: all .45s ease-Out;
 }
 
 .beforenav .navigation .social-media p a .fa-instagram:hover {
-  color: white;
-  background-color: #ffc400;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f00), to(#FCAF45));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: 0.5px solid white;
 }
 
 .beforenav .navigation .social-media p a .fa-dribbble {
@@ -70,10 +78,197 @@
   padding: 0.5rem 0.5rem;
   border-radius: 50%;
   background-color: white;
+  -webkit-transition: all .45s ease-Out;
+  transition: all .45s ease-Out;
 }
 
 .beforenav .navigation .social-media p a .fa-dribbble:hover {
+  color: #06bb06;
+  border: 0.5px solid white;
+}
+
+header {
+  width: 100%;
+  height: 48px;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 100px;
+}
+
+header .hamburger {
+  display: none;
+}
+
+header .nav-bar {
+  margin-top: 16px;
+}
+
+header .nav-bar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .nav-bar ul li {
+  list-style: none;
+}
+
+header .nav-bar ul li a {
+  text-decoration: none;
+  display: block;
   color: white;
+  font-size: 14px;
+  padding: 5px 20px;
+  border-radius: 50px;
+  -webkit-transition: all 0.45s ease-out;
+  transition: all 0.45s ease-out;
+  margin: 0 5px;
+}
+
+header .nav-bar ul li a:hover {
+  color: black;
   background-color: #ffc400;
+}
+
+@media only screen and (max-width: 1320px) {
+  header {
+    padding: 0 50px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  header {
+    padding: 0 30px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  header {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  header .hamburger {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 30px;
+    height: 30px;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    border: 2px solid white;
+  }
+  header .hamburger .line {
+    width: 10px;
+    height: 2px;
+    margin-left: 20%;
+    background-color: white;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+            box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+  header .hamburger .line::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background: white;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+            box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  header .hamburger .line::after {
+    content: '';
+    position: absolute;
+    margin-right: 5%;
+    width: 15px;
+    height: 2px;
+    background: white;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+            box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  header .hamburger.open .line {
+    -webkit-transform: translateX(-49px);
+            transform: translateX(-49px);
+    background: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    box-shadow: none;
+  }
+  header .hamburger.open .line::before {
+    -webkit-transform: rotate(45deg) translate(35px, -35px);
+            transform: rotate(45deg) translate(35px, -35px);
+  }
+  header .hamburger.open .line::after {
+    -webkit-transform: rotate(-45deg) translate(35px, 35px);
+            transform: rotate(-45deg) translate(35px, 35px);
+  }
+  header .nav-bar {
+    height: 0;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  header .nav-bar ul {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: block;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    -webkit-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
+    opacity: 0;
+  }
+  header .nav-bar ul li {
+    margin-right: 30px;
+  }
+  header .nav-bar ul li a {
+    margin-bottom: 12px;
+  }
+  header .nav-bar.active {
+    height: 450px;
+  }
+  header .nav-bar.active ul {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .beforenav .navigation {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 /*# sourceMappingURL=main.css.map */

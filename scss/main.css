@@ -104,7 +104,7 @@ header {
 }
 
 header .searchBar {
-  width: 31%;
+  width: 25%;
 }
 
 header .searchBar form {
@@ -166,7 +166,7 @@ header .hamburger {
 }
 
 header .nav-bar {
-  width: 69%;
+  width: 75%;
   margin-top: 16px;
   display: -webkit-box;
   display: -ms-flexbox;

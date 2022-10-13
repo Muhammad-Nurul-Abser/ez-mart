@@ -190,16 +190,42 @@ header .nav-bar ul li {
   list-style: none;
 }
 
+header .nav-bar ul li .dropdown-content {
+  display: none;
+}
+
+header .nav-bar ul li .dropdown-content.expand {
+  display: block;
+  margin-top: 25px;
+  min-height: 300px;
+  position: absolute;
+  top: 80px;
+  right: 30%;
+  left: 30%;
+  background: linear-gradient(202.75deg, #b0adad 0%, #04045b 91.58%);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+header .nav-bar ul li .dropdown-content.expand a {
+  margin-top: 5px;
+}
+
 header .nav-bar ul li a {
   text-decoration: none;
   display: block;
   color: white;
   font-size: 14px;
   padding: 5px 20px;
+  white-space: nowrap;
   border-radius: 50px;
   -webkit-transition: all 0.45s ease-out;
   transition: all 0.45s ease-out;
   margin: 0 5px;
+}
+
+header .nav-bar ul li a .caret {
+  font-size: 70%;
 }
 
 header .nav-bar ul li a:hover {
@@ -267,7 +293,7 @@ header .nav-bar .login-cart li a .login:hover {
             justify-content: end;
   }
   header .searchBar form {
-    left: -210%;
+    left: -280%;
   }
   header .hamburger {
     display: block;
@@ -370,6 +396,11 @@ header .nav-bar .login-cart li a .login:hover {
   header .nav-bar ul li a {
     margin-bottom: 12px;
   }
+  header .nav-bar ul li .dropdown-content.expand {
+    top: 80px;
+    right: 20%;
+    left: 30%;
+  }
   header .nav-bar .login-cart {
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -403,15 +434,36 @@ header .nav-bar .login-cart li a .login:hover {
             justify-content: space-between;
   }
   header .searchBar form {
-    width: 140px !important;
-    left: -200% !important;
+    width: 180px !important;
+    left: -280% !important;
+  }
+  header .nav-bar ul li .dropdown-content.expand {
+    top: 80px;
+    right: 20%;
+    left: 30%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100px;
+    width: 300px;
+  }
+  header .nav-bar ul li .dropdown-content.expand ::-webkit-scrollbar {
+    width: 10px;
+  }
+  header .nav-bar ul li .dropdown-content.expand ::-webkit-scrollbar-track {
+    background: darkgray;
+  }
+  header .nav-bar ul li .dropdown-content.expand ::-webkit-scrollbar-thumb {
+    border: 5px solid transparent;
+    border-radius: 100px;
+    background-color: #8070d4;
+    background-clip: content-box;
   }
 }
 
 @media only screen and (max-width: 300px) {
   header .searchBar form {
-    width: 140px !important;
-    left: -180% !important;
+    width: 120px !important;
+    left: -260% !important;
   }
 }
 /*# sourceMappingURL=main.css.map */

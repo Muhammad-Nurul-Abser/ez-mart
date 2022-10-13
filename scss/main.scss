@@ -1,6 +1,11 @@
 @import "mixin";
 @import "var";
 
+// html {
+//     scrollbar-color: #6969dd #e0e0e0;
+//     scrollbar-width: thin;
+// }
+
 .beforenav{
     width: 100%;
     height: 3.5rem;
@@ -143,6 +148,7 @@ header{
         display: none;
     }
 
+
     .nav-bar{
         width: 75%;
         margin-top: 16px;
@@ -154,21 +160,44 @@ header{
             align-items: center;
             li{
                 list-style: none;
+                .dropdown-content{
+                    display: none;
+                }
+                .dropdown-content.expand{
+                    display: block;
+                    margin-top: 25px;
+                    min-height: 300px;
+                    position: absolute;
+                    top: 80px;
+                    right: 30%;
+                    left: 30%;
+                    // background-color: rgb(0, 0, 0);
+                    background: linear-gradient(202.75deg, #b0adad 0%, #04045b 91.58%);
+                    transition: all 0.5s ease-in-out;
+                    a{
+                        margin-top: 5px;
+                    }
+                }
                 a{
                     text-decoration: none;
                     display: block;
                     color: white;
                     font-size: 14px;
                     padding: 5px 20px;
+                    white-space: nowrap;
                     border-radius: 50px;
                     transition: all 0.45s ease-out;
                     margin: 0 5px;
+                    .caret{
+                        font-size: 70%;
+                    }
                     &:hover{
                         color: black;
                         background-color: rgb(255, 196, 0);
                     }
                 }
             }
+
         }
         .login-cart{
             display: flex;
@@ -221,7 +250,7 @@ header{
 
         .searchBar{
             form{
-                left: -210%;
+                left: -280%;
             }
         }
 
@@ -288,7 +317,6 @@ header{
 
         // nav bar
         .nav-bar{
-            // display: block;
             margin-top: 25px;
             height: 0;
             position: absolute;
@@ -298,7 +326,6 @@ header{
             width: 100%;
             background-color: black;
             transition: all 0.4s ease-in-out;
-            // overflow: hidden;
             ul{
                 width: fit-content;
                 display: block;
@@ -310,6 +337,11 @@ header{
                     margin-right: 30px;
                     a{
                         margin-bottom: 12px;
+                    }
+                    .dropdown-content.expand{
+                        top: 80px;
+                        right: 20%;
+                        left: 30%;
                     }
                 }
             }
@@ -348,8 +380,35 @@ header{
     header{
         .searchBar{
             form{
-                width: 140px!important;
-                left: -200%!important;
+                width: 180px!important;
+                left: -280%!important;
+            }
+        }
+        .nav-bar{
+            ul{
+                li{
+                    .dropdown-content.expand{
+                        top: 80px;
+                        right: 20%;
+                        left: 30%;
+                        overflow-x: hidden; 
+                        overflow-y: scroll; 
+                        height:100px; 
+                        width: 300px;
+                        ::-webkit-scrollbar {
+                            width: 10px;
+                        }
+                        ::-webkit-scrollbar-track {
+                            background: darkgray;
+                        }
+                        ::-webkit-scrollbar-thumb {
+                            border: 5px solid transparent;
+                            border-radius: 100px;
+                            background-color: #8070d4;
+                            background-clip: content-box;
+                        }
+                    }
+                }
             }
         }
     }
@@ -359,8 +418,8 @@ header{
     header{
         .searchBar{
             form{
-                width: 140px!important;
-                left: -180%!important;
+                width: 120px!important;
+                left: -260%!important;
             }
         }
     }

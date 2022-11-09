@@ -587,30 +587,6 @@ header{
                 transition: all .7s ease-in-out;
                 opacity: 0;
 
-                .dropdown {
-                    &:checked + label, &:not(:checked) + label {
-                        position: relative;
-                        font-size: 15px;
-                        line-height: 2;
-                        height: 100%;
-                        width: 140px;
-                        letter-spacing: 1px;
-                        display: -webkit-inline-flex;
-                        display: -ms-inline-flexbox;
-                        display: inline-flex;
-                        -webkit-align-items: center;
-                        -moz-align-items: center;
-                        -ms-align-items: center;
-                        align-items: center;
-                        -webkit-justify-content: center;
-                        -moz-justify-content: center;
-                        -ms-justify-content: center;
-                        justify-content: center;
-                        -ms-flex-pack: center;
-                        text-align: left;
-                    }
-                }
-             
             }
 
             .login-cart{
@@ -651,33 +627,26 @@ header{
                 left: -280%!important;
             }
         }
-        // .nav-bar{
-        //     ul{
-        //         li{
-        //             .dropdown-content.expnd{
-        //                 top: 80px;
-        //                 right: 20%;
-        //                 left: 30%;
-        //                 overflow-x: hidden; 
-        //                 overflow-y: scroll; 
-        //                 height:100px; 
-        //                 width: 300px;
-        //                 ::-webkit-scrollbar {
-        //                     width: 10px;
-        //                 }
-        //                 ::-webkit-scrollbar-track {
-        //                     background: darkgray;
-        //                 }
-        //                 ::-webkit-scrollbar-thumb {
-        //                     border: 5px solid transparent;
-        //                     border-radius: 100px;
-        //                     background-color: #8070d4;
-        //                     background-clip: content-box;
-        //                 }
-        //             }
-        //         }
-        //     }
-        // }
+        .nav-bar{
+            ul{
+                .dropdown {
+                    &:checked + label, &:not(:checked) + label {
+                        width: 140px;
+
+                        -webkit-align-items: left;
+                        -moz-align-items: left;
+                        -ms-align-items: left;
+                        align-items: left;
+                        -webkit-justify-content: left;
+                        -moz-justify-content: left;
+                        -ms-justify-content: left;
+                        justify-content: left;
+                        -ms-flex-pack: left;
+                        text-align: left;
+                    }
+                }
+            }
+        }
     }
 }
 

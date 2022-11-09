@@ -631,17 +631,17 @@ header{
             ul{
                 .dropdown {
                     &:checked + label, &:not(:checked) + label {
-                        width: 140px;
+                        width: 120px;
 
-                        -webkit-align-items: left;
-                        -moz-align-items: left;
-                        -ms-align-items: left;
-                        align-items: left;
-                        -webkit-justify-content: left;
-                        -moz-justify-content: left;
-                        -ms-justify-content: left;
-                        justify-content: left;
-                        -ms-flex-pack: left;
+                        -webkit-align-items: center;
+                        -moz-align-items: center;
+                        -ms-align-items: center;
+                        align-items: center;
+                        -webkit-justify-content: center;
+                        -moz-justify-content: center;
+                        -ms-justify-content: center;
+                        justify-content: center;
+                        -ms-flex-pack: center;
                         text-align: left;
                     }
                 }

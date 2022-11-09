@@ -4,27 +4,26 @@ let menuOpen = false;
 const navBar = document.querySelector(".nav-bar");
 
 hamburger.addEventListener("click", () => {
-    if(!menuOpen){
+    if (!menuOpen) {
         hamburger.classList.add("open");
         menuOpen = true;
-    } else{
+    } else {
         hamburger.classList.remove("open");
         menuOpen = false;
     }
     navBar.classList.toggle("active");
 });
 
-// dropdown
-const dropdown = document.querySelector(".dropbtn");
-const dropdownContent = document.querySelector(".dropdown-content");
-dropdown.addEventListener("mouseover", function(){
-    dropdownContent.classList.add("expand");
-});
+// // dropdown
+// const dropdown = document.querySelector(".dropbtn");
+// const dropdownContent = document.querySelector(".dropdown-content");
+// dropdown.addEventListener("click", function(){
+//     dropdownContent.classList.toggle("expand");
+// });
 
-document.addEventListener('click', function(event){
-    const dropdownHiding = document.querySelector('.dropdown-content');
-    if(!dropdownHiding.contains(event.target)) {
-       dropdownContent.classList.remove("expand");
-    }
- });
-
+// body.document.addEventListener('click', function(event){
+//     const dropdownHiding = document.querySelector('.dropdown-content');
+//     if(!dropdownHiding.contains(event.target)) {
+//        dropdownContent.classList.remove("expand");
+//     }
+//  });

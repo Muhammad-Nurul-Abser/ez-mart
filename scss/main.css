@@ -100,7 +100,6 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  overflow: hidden;
 }
 
 header .searchBar {
@@ -109,7 +108,7 @@ header .searchBar {
 
 header .searchBar form {
   position: relative;
-  left: 10%;
+  left: 20%;
   -webkit-transition: all 1s;
   transition: all 1s;
   width: 200px;
@@ -174,10 +173,10 @@ header .nav-bar {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  overflow: hidden;
 }
 
 header .nav-bar ul {
+  margin-left: 2%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,29 +185,274 @@ header .nav-bar ul {
           align-items: center;
 }
 
+header .nav-bar ul .sec-center {
+  position: relative;
+  max-width: 100%;
+  text-align: center;
+  z-index: 200;
+}
+
+header .nav-bar ul [type="checkbox"]:checked, header .nav-bar ul [type="checkbox"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+header .nav-bar ul .dropdown:checked + label, header .nav-bar ul .dropdown:not(:checked) + label {
+  position: relative;
+  font-size: 15px;
+  line-height: 2;
+  height: 100%;
+  width: 140px;
+  letter-spacing: 1px;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -ms-flex-pack: center;
+  text-align: center;
+  border: none;
+  background-color: black;
+  cursor: pointer;
+  color: white;
+  border-radius: 50px;
+  -webkit-transition: all 0.45s ease-out;
+  transition: all 0.45s ease-out;
+}
+
+header .nav-bar ul .dropdown:checked + label:hover, header .nav-bar ul .dropdown:not(:checked) + label:hover {
+  color: black;
+  background-color: #ffc400;
+}
+
+header .nav-bar ul .dropdown:checked + label .categ-arrow, header .nav-bar ul .dropdown:not(:checked) + label .categ-arrow {
+  font-size: 12px;
+  margin-top: 2px;
+  margin-left: 5px;
+}
+
+header .nav-bar ul .dropdown:checked + label:before, header .nav-bar ul .dropdown:not(:checked) + label:before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  cursor: auto;
+  pointer-events: none;
+}
+
+header .nav-bar ul .dropdown:checked + label:before {
+  pointer-events: auto;
+}
+
+header .nav-bar ul .dropdown:not(:checked) + label .uil {
+  font-size: 24px;
+  margin-left: 10px;
+  -webkit-transition: -webkit-transform 200ms linear;
+  transition: -webkit-transform 200ms linear;
+  transition: transform 200ms linear;
+  transition: transform 200ms linear, -webkit-transform 200ms linear;
+}
+
+header .nav-bar ul .dropdown:checked + label .uil {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  font-size: 24px;
+  margin-left: 10px;
+  -webkit-transition: -webkit-transform 200ms linear;
+  transition: -webkit-transform 200ms linear;
+  transition: transform 200ms linear;
+  transition: transform 200ms linear, -webkit-transform 200ms linear;
+}
+
+header .nav-bar ul .section-dropdown {
+  position: absolute;
+  padding: 5px;
+  background-color: #494646;
+  top: 48px;
+  left: 0;
+  width: 20rem;
+  border-radius: 4px;
+  display: block;
+  -webkit-box-shadow: 0 14px 35px 0 rgba(9, 9, 12, 0.4);
+          box-shadow: 0 14px 35px 0 rgba(9, 9, 12, 0.4);
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+header .nav-bar ul .dark-light:checked ~ .sec-center .section-dropdown {
+  background-color: #fff;
+  -webkit-box-shadow: 0 14px 35px 0 rgba(9, 9, 12, 0.15);
+          box-shadow: 0 14px 35px 0 rgba(9, 9, 12, 0.15);
+}
+
+header .nav-bar ul .dropdown:checked ~ .section-dropdown {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+header .nav-bar ul .section-dropdown:before {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  content: '';
+  display: block;
+  z-index: 1;
+}
+
+header .nav-bar ul .section-dropdown:after {
+  position: absolute;
+  top: -7px;
+  left: 30px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #494646;
+  content: '';
+  display: block;
+  z-index: 2;
+  -webkit-transition: all 0.45s ease-out;
+  transition: all 0.45s ease-out;
+}
+
+header .nav-bar ul a {
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  color: white;
+  font-size: 14px;
+  padding: 5px 20px;
+  white-space: nowrap;
+  border-radius: 50px;
+  -webkit-transition: all 0.45s ease-out;
+  transition: all 0.45s ease-out;
+  margin: 8px 0px;
+}
+
+header .nav-bar ul a:hover {
+  color: black;
+  background-color: #ffc400;
+}
+
+header .nav-bar ul .dropdown-sub:checked + label, header .nav-bar ul .dropdown-sub:not(:checked) + label {
+  position: relative;
+  color: #fff;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+  font-size: 15px;
+  border-radius: 2px;
+  padding: 5px 0;
+  padding-left: 20px;
+  padding-right: 15px;
+  text-align: left;
+  text-decoration: none;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -ms-flex-pack: distribute;
+  cursor: pointer;
+  border-radius: 50px;
+  -webkit-transition: all 0.45s ease-out;
+  transition: all 0.45s ease-out;
+}
+
+header .nav-bar ul .dropdown-sub:checked + label .darrow, header .nav-bar ul .dropdown-sub:not(:checked) + label .darrow {
+  font-size: 10px;
+}
+
+header .nav-bar ul .dropdown-sub:checked + label .uil {
+  font-size: 22px;
+}
+
+header .nav-bar ul .dropdown-sub:not(:checked) + label .uil {
+  font-size: 22px;
+  -webkit-transition: -webkit-transform 200ms linear;
+  transition: -webkit-transform 200ms linear;
+  transition: transform 200ms linear;
+  transition: transform 200ms linear, -webkit-transform 200ms linear;
+}
+
+header .nav-bar ul .dropdown-sub:checked + label .uil {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  -webkit-transition: -webkit-transform 200ms linear;
+  transition: -webkit-transform 200ms linear;
+  transition: transform 200ms linear;
+  transition: transform 200ms linear, -webkit-transform 200ms linear;
+}
+
+header .nav-bar ul .dropdown-sub:checked + label:hover {
+  color: black;
+  background-color: #ffc400;
+}
+
+header .nav-bar ul .dropdown-sub:not(:checked) + label:hover {
+  color: black;
+  background-color: #ffc400;
+}
+
+header .nav-bar ul .section-dropdown-sub {
+  position: relative;
+  display: block;
+  width: 100%;
+  pointer-events: none;
+  opacity: 0;
+  max-height: 0;
+  padding-left: 10px;
+  padding-right: 3px;
+  overflow: hidden;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+header .nav-bar ul .dropdown-sub:checked ~ .section-dropdown-sub {
+  pointer-events: auto;
+  opacity: 1;
+  max-height: 999px;
+}
+
+header .nav-bar ul .section-dropdown-sub a {
+  font-size: 14px;
+}
+
+header .nav-bar ul .section-dropdown-sub a .uil {
+  font-size: 20px;
+}
+
 header .nav-bar ul li {
   list-style: none;
 }
 
 header .nav-bar ul li .dropdown-content {
   display: none;
-}
-
-header .nav-bar ul li .dropdown-content.expand {
-  display: block;
-  margin-top: 25px;
-  min-height: 300px;
-  position: absolute;
-  top: 80px;
-  right: 30%;
-  left: 30%;
-  background: linear-gradient(202.75deg, #b0adad 0%, #04045b 91.58%);
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-
-header .nav-bar ul li .dropdown-content.expand a {
-  margin-top: 5px;
 }
 
 header .nav-bar ul li a {
@@ -228,6 +472,13 @@ header .nav-bar ul li a .caret {
   font-size: 70%;
 }
 
+header .nav-bar ul li a .caret:focus {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: rotate(180deg) translateY(180px);
+          transform: rotate(180deg) translateY(180px);
+}
+
 header .nav-bar ul li a:hover {
   color: black;
   background-color: #ffc400;
@@ -237,8 +488,9 @@ header .nav-bar .login-cart {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   width: 25%;
 }
 
@@ -283,6 +535,16 @@ header .nav-bar .login-cart li a .login:hover {
 @media only screen and (max-width: 1100px) {
   header {
     padding: 0 30px;
+  }
+  header .searchBar form {
+    left: 10%;
+    width: 170px;
+  }
+  header .nav-bar {
+    width: 90%;
+  }
+  header .nav-bar ul {
+    margin-left: 0%;
   }
 }
 
@@ -436,27 +698,6 @@ header .nav-bar .login-cart li a .login:hover {
   header .searchBar form {
     width: 180px !important;
     left: -280% !important;
-  }
-  header .nav-bar ul li .dropdown-content.expand {
-    top: 80px;
-    right: 20%;
-    left: 30%;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    height: 100px;
-    width: 300px;
-  }
-  header .nav-bar ul li .dropdown-content.expand ::-webkit-scrollbar {
-    width: 10px;
-  }
-  header .nav-bar ul li .dropdown-content.expand ::-webkit-scrollbar-track {
-    background: darkgray;
-  }
-  header .nav-bar ul li .dropdown-content.expand ::-webkit-scrollbar-thumb {
-    border: 5px solid transparent;
-    border-radius: 100px;
-    background-color: #8070d4;
-    background-clip: content-box;
   }
 }
 

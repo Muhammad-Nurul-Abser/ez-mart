@@ -586,17 +586,31 @@ header{
                 text-align: center;
                 transition: all .7s ease-in-out;
                 opacity: 0;
-                li{
-                    margin-right: 30px;
-                    a{
-                        margin-bottom: 12px;
-                    }
-                    .dropdown-content.expand{
-                        top: 80px;
-                        right: 20%;
-                        left: 30%;
+
+                .dropdown {
+                    &:checked + label, &:not(:checked) + label {
+                        position: relative;
+                        font-size: 15px;
+                        line-height: 2;
+                        height: 100%;
+                        width: 140px;
+                        letter-spacing: 1px;
+                        display: -webkit-inline-flex;
+                        display: -ms-inline-flexbox;
+                        display: inline-flex;
+                        -webkit-align-items: center;
+                        -moz-align-items: center;
+                        -ms-align-items: center;
+                        align-items: center;
+                        -webkit-justify-content: center;
+                        -moz-justify-content: center;
+                        -ms-justify-content: center;
+                        justify-content: center;
+                        -ms-flex-pack: center;
+                        text-align: left;
                     }
                 }
+             
             }
 
             .login-cart{

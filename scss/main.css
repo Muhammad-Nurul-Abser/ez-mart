@@ -652,16 +652,27 @@ header .nav-bar .login-cart li a .login:hover {
     transition: all .7s ease-in-out;
     opacity: 0;
   }
-  header .nav-bar ul li {
-    margin-right: 30px;
-  }
-  header .nav-bar ul li a {
-    margin-bottom: 12px;
-  }
-  header .nav-bar ul li .dropdown-content.expand {
-    top: 80px;
-    right: 20%;
-    left: 30%;
+  header .nav-bar ul .dropdown:checked + label, header .nav-bar ul .dropdown:not(:checked) + label {
+    position: relative;
+    font-size: 15px;
+    line-height: 2;
+    height: 100%;
+    width: 140px;
+    letter-spacing: 1px;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-box;
+    display: inline-flex;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -ms-flex-pack: center;
+    text-align: left;
   }
   header .nav-bar .login-cart {
     width: -webkit-fit-content;

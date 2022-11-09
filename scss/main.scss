@@ -254,7 +254,7 @@ header{
                 background-color: rgb(73, 70, 70);
                 top: 48px;
                 left: 0;
-                width: 18rem;
+                width: 20rem;
                 border-radius: 4px;
                 display: block;
                 box-shadow: 0 14px 35px 0 rgba(9, 9, 12, 0.4);
@@ -632,18 +632,11 @@ header{
                 .dropdown {
                     &:checked + label, &:not(:checked) + label {
                         width: 120px;
-
-                        -webkit-align-items: center;
-                        -moz-align-items: center;
-                        -ms-align-items: center;
-                        align-items: center;
-                        -webkit-justify-content: center;
-                        -moz-justify-content: center;
-                        -ms-justify-content: center;
-                        justify-content: center;
-                        -ms-flex-pack: center;
                         text-align: left;
                     }
+                }
+                .section-dropdown {
+                    width: 15rem;
                 }
             }
         }

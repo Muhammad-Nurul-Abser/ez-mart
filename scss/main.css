@@ -282,7 +282,7 @@ header .nav-bar ul .section-dropdown {
   background-color: #494646;
   top: 48px;
   left: 0;
-  width: 18rem;
+  width: 20rem;
   border-radius: 4px;
   display: block;
   -webkit-box-shadow: 0 14px 35px 0 rgba(9, 9, 12, 0.4);
@@ -690,17 +690,10 @@ header .nav-bar .login-cart li a .login:hover {
   }
   header .nav-bar ul .dropdown:checked + label, header .nav-bar ul .dropdown:not(:checked) + label {
     width: 120px;
-    -moz-align-items: center;
-    -ms-align-items: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    -webkit-box-pack: center;
-            justify-content: center;
-    -ms-flex-pack: center;
     text-align: left;
+  }
+  header .nav-bar ul .section-dropdown {
+    width: 15rem;
   }
 }
 

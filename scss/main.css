@@ -674,6 +674,15 @@ header .nav-bar .login-cart li a .login:hover {
     margin-top: 45px;
     margin-right: 30px;
   }
+  header .nav-bar.active {
+    height: 450px;
+  }
+  header .nav-bar.active ul {
+    opacity: 1;
+  }
+  header .nav-bar.active .login-cart {
+    opacity: 1;
+  }
 }
 
 @media only screen and (max-width: 575px) {

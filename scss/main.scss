@@ -586,7 +586,15 @@ header{
                 text-align: center;
                 transition: all .7s ease-in-out;
                 opacity: 0;
-
+                .dropdown {
+                    &:checked + label, &:not(:checked) + label {
+                        width: 120px;
+                        text-align: left;
+                    }
+                }
+                .section-dropdown {
+                    width: 15rem;
+                }
             }
 
             .login-cart{
@@ -600,15 +608,6 @@ header{
                     margin-top: 45px;
                     margin-right: 30px;
                 }
-            }
-        }
-        .nav-bar.active{
-            height: 450px;
-            ul{
-                opacity: 1;
-            }
-            .login-cart{
-                opacity: 1;
             }
         }
     }

@@ -14,16 +14,3 @@ hamburger.addEventListener("click", () => {
     navBar.classList.toggle("active");
 });
 
-// // dropdown
-// const dropdown = document.querySelector(".dropbtn");
-// const dropdownContent = document.querySelector(".dropdown-content");
-// dropdown.addEventListener("click", function(){
-//     dropdownContent.classList.toggle("expand");
-// });
-
-// body.document.addEventListener('click', function(event){
-//     const dropdownHiding = document.querySelector('.dropdown-content');
-//     if(!dropdownHiding.contains(event.target)) {
-//        dropdownContent.classList.remove("expand");
-//     }
-//  });

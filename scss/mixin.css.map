@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "ACIA,OAAO,CAAC,wFAAI",
+    "mappings": "",
     "sources": [
         "mixin.scss",
         "var.scss"

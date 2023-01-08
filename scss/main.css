@@ -111,4 +111,153 @@
     margin-top: 5px;
   }
 }
+
+/* feature */
+/* feature card */
+.featureMain {
+  width: 100%;
+  height: 3rem;
+}
+
+.featureMain .FeatureAll {
+  width: 22.5rem;
+  height: 100%;
+  overflow: hidden;
+}
+
+.featureMain .FeatureAll .btnAll {
+  padding: 15px 30px;
+  border: none;
+  color: white;
+}
+
+.featureMain .FeatureAll .btnTopFeature {
+  padding: 15px 30px;
+  color: white;
+  border: none;
+}
+
+.featureMain .FeatureAll .btnSeller {
+  padding: 15px 30px;
+  color: white;
+  border: none;
+}
+
+@media screen and (max-width: 767px) {
+  .featureMain .FeatureAll {
+    width: 18.5rem;
+    height: 100%;
+  }
+  .featureMain .FeatureAll .btnAll {
+    font-size: 13px;
+    padding: 10px 25px;
+  }
+  .featureMain .FeatureAll .btnTopFeature {
+    font-size: 13px;
+    padding: 10px 25px;
+  }
+  .featureMain .FeatureAll .btnSeller {
+    font-size: 13px;
+    padding: 10px 25px;
+  }
+}
+
+.color {
+  background-color: black;
+}
+
+.background {
+  background-color: rgba(177, 16, 16, 0.89);
+}
+
+.active {
+  background-color: black;
+}
+
+.box .feature-cardbox {
+  width: 17rem;
+  height: 22rem;
+  border: 1px solid;
+  overflow: hidden;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.box .feature-cardbox:hover {
+  /* IE 9 */
+  -webkit-transform: scale(1.1);
+  /* Safari 3-8 */
+  transform: scale(1.1);
+  background-color: white;
+}
+
+@media screen and (max-width: 1199px) {
+  .feature-cardbox {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .feature-cardbox {
+    width: 15rem !important;
+  }
+}
+
+.featurebox {
+  width: 100%;
+  height: 80%;
+  position: relative;
+}
+
+.featurebox img {
+  margin-top: 10px;
+  width: 90%;
+  height: 90%;
+}
+
+.featurebox .place {
+  color: white;
+  position: absolute;
+  top: 0px;
+  left: 180px;
+  background-color: red;
+  padding: 5px 13px 7px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.link:hover {
+  color: black;
+}
+
+.featurebox-text {
+  position: relative;
+  width: 100%;
+  height: 10%;
+  margin: 0%;
+  padding: 0px 12px;
+  margin: auto;
+}
+
+.featurebox-text p:hover {
+  color: tomato;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.featurebox-text .featureprice {
+  position: absolute;
+  top: 40px;
+  left: 12px;
+  width: 14.7rem;
+}
+
+.featurebox-text .featureprice:hover {
+  color: green;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
 /*# sourceMappingURL=main.css.map */

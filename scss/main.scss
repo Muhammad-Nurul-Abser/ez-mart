@@ -109,3 +109,143 @@
     }
 }
 
+
+/* feature */
+
+/* feature card */
+.featureMain {
+	width: 100%;
+	height: 3rem;
+    .FeatureAll {
+
+        width: 22.5rem;
+        height: 100%;
+        overflow: hidden;
+        .btnAll {
+            padding: 15px 30px;
+            border: none;
+            color: $color_1;
+        }
+        .btnTopFeature {
+            padding: 15px 30px;
+            color: $color_1;
+            border: none;
+        }
+        .btnSeller {
+            padding: 15px 30px;
+            color: $color_1;
+            border: none;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .featureMain {
+        .FeatureAll {
+            width: 18.5rem;
+            height: 100%;
+            .btnAll {
+                font-size: 13px;
+                padding: 10px 25px;
+            }
+            .btnTopFeature {
+                font-size: 13px;
+                padding: 10px 25px;
+            }
+            .btnSeller {
+                font-size: 13px;
+                padding: 10px 25px;
+            }
+        }
+    }
+    
+}
+.color {
+	background-color: $background-color_3;
+}
+.background {
+	background-color: $background-color_4;
+}
+
+.active {
+	background-color: $background-color_3;
+}
+
+
+.box {
+    .feature-cardbox{
+        width: 17rem;
+        height: 22rem;
+        border: 1px solid;
+        overflow: hidden;
+        transition: all 0.5s;
+        &:hover{
+            -ms-transform: scale(1.1); /* IE 9 */
+            -webkit-transform: scale(1.1); /* Safari 3-8 */
+            transform: scale(1.1); 
+            background-color: $background-color_5;
+        }
+    }
+}
+@media screen and (max-width: 1199px) {
+    .feature-cardbox{
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .feature-cardbox{
+        width: 15rem!important;
+    }
+}
+
+.featurebox {
+	width: 100%;
+	height: 80%;
+	position: relative;
+	img {
+		margin-top: 10px;
+		width: 90%;
+		height: 90%;
+	}
+    .place {
+        color: $color_1;
+        position: absolute;
+        top: 0px;
+        left: 180px;
+        background-color: $background-color_6;
+        padding: 5px 13px 7px;
+    }
+}
+.link {
+	text-decoration: none;
+	color: $color_2;
+    &:hover{
+        color: $color_2;
+    }
+}
+.featurebox-text {
+	position: relative;
+	width: 100%;
+	height: 10%;
+	margin: 0%;
+	padding: 0px 12px;
+	margin: auto;
+	p {
+		&:hover {
+			color: $color_3;
+			transition: all 0.25s;
+		}
+	}
+    .featureprice {
+        position: absolute;
+        top: 40px;
+        left: 12px;
+        width: 14.7rem;
+        &:hover {
+            color: $color_4;
+            transition: all 0.25s;
+        }
+    }
+}
+
+
+

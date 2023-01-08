@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
@@ -46,7 +47,6 @@
 				<input type="search" placeholder="Search here ...">
 				<i class="fa fa-search"></i>
 			</form>
-
 		</div>
 
 		<!-- nav menu -->
@@ -57,49 +57,159 @@
 		<!-- nav Item -->
 		<nav class="nav-bar">
 			<ul>
-				<!-- <li><a class="nav-btn dropbtn" href="#">Categories <span class="caret">▼</span></a>
-					<div class="dropdown-content">
-						<div class="row">
-							<a class="col-md-4" href="#">Link 1</a>
-							<a class="col-md-4" href="#">Link 2</a>
-							<a class="col-md-4" href="#">Link 3</a>
-							<a class="col-md-4" href="#">Link 4</a>
-						</div>
-					</div>
-				</li> -->
 				<div class="sec-center">
 					<input class="dropdown" type="checkbox" id="dropdown" name="dropdown" />
 					<label class="for-dropdown" for="dropdown">Categories<span class="categ-arrow">▼</span></i>
 					</label>
 					<div class="section-dropdown">
-						<a href="#">Dropdown Link </a>
 						<input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
-						<label class="for-dropdown-sub" for="dropdown-sub">Dropdown Sub<span
+						<label class="for-dropdown-sub mt-2" for="dropdown-sub">Fashion<span
 								class="darrow">▼</span></label>
 						<div class="section-dropdown-sub">
-							<a href="#"><span>➟</span> Dropdown Link</a>
-							<a href="#"><span>➟</span> Dropdown Link</a>
+							<a href="#"><span>➟</span> Men</a>
+							<a href="#"><span>➟</span> Women</a>
+							<a href="#"><span>➟</span> Baby</a>
 						</div>
-						<a href="#">Dropdown Link </a>
-						<a href="#">Dropdown Link </a>
+						<a href="#">Sports & Outdoors</a>
+						<a href="#">Mobile & Tablets</a>
+						<a href="#">Computer Accessories</a>
 					</div>
 				</div>
 
-				<li><a class="nav-btn" href="">Features</a></li>
+				<li><a class="nav-btn" href="allFeatures.html">Features</a></li>
 				<li><a class="nav-btn" href="">Gift-card</a></li>
 				<li><a class="nav-btn" href="">About</a></li>
 				<li><a class="nav-btn" href="">Contact</a></li>
 			</ul>
 			<!-- login and cart -->
 			<div class="login-cart container">
-				<li><a class="nav-btn cart" href=""><i class="fa-solid fa-bag-shopping "></i></a></li>
-				<li><a class="nav-btn login" href=""><i class="fa-solid fa-right-to-bracket "></i></a></li>
+				<li><a class="nav-btn cart" href=""><i class="fa-solid fa-bag-shopping"></i></a><span
+						class="cart-badge">5</span></li>
+				<li>
+					<a class="nav-btn login" href="">
+						<span class="fw-bold">Login</span>
+						<i class="fa-solid fa-right-to-bracket "></i>
+					</a>
+
+
+					<!-- After user login -->
+					<!-- <div class="user bg-danger">
+						<img class="img-fluid" src="icon/user.png" alt="">
+					</div> -->
+				</li>
 			</div>
 		</nav>
 	</header>
 
-	<main class="indexMain">
 
+	<main class="indexMain ">
+		<!-- carousel -->
+		<section class=" d-flex justify-content-center mt-3">
+			<div id="carouselExampleDark" class="carousel slide carousel-fade carousel-dark" data-bs-ride="carousel">
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+						aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+						aria-label="Slide 2"></button>
+					<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+						aria-label="Slide 3"></button>
+				</div>
+				<div class="carousel-inner imgdiv">
+					<div class="carousel-item active" data-bs-interval="2000">
+						<img class="carouselImage img-fluid" src="images/banner-01.jpg" class="d-block w-100" alt="...">
+						<div class="carousel-caption d-none d-md-block">
+							<h1 class="text-white"><b>Welcome to EZ-Mart</b></h1>
+							<p class="text-white">See how your users experience your website in realtime or view
+								trends to see any changes in performance over time.</p>
+							<a class="carouselButton form-top" href="">Shop Now</a>
+						</div>
+					</div>
+					<div class="carousel-item" data-bs-interval="2000">
+						<img class="carouselImage img-fluid" src="images/banner-02.jpg" class="d-block w-100" alt="...">
+						<div class="carousel-caption d-none d-md-block">
+							<h1 class="text-white"><b>Welcome to EZ-Mart</b></h1>
+							<p class="text-white">See how your users experience your website in realtime or view
+								trends to see any changes in performance over time.</p>
+							<a class="carouselButton form-top" href="">Shop Now</a>
+						</div>
+					</div>
+					<div class="carousel-item" data-bs-interval="2000">
+						<img class="carouselImage img-fluid" src="images/banner-03.jpg" class="d-block w-100" alt="...">
+						<div class="carousel-caption d-none d-md-block">
+							<h1 class="text-white"><b>Welcome to EZ-Mart</b></h1>
+							<p class="text-white">See how your users experience your website in realtime or view
+								trends to see any changes in performance over time.</p>
+							<a class="carouselButton form-top" href="">Shop Now</a>
+						</div>
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+					data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+					data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</section>
+
+		<!-- shop department -->
+		<section class="container mt-5 mb-5">
+			<h2 class="text-center">Shop By Department</h2>
+			<div class=" d-flex flex-wrap justify-content-around mt-4 text-center department" >
+				<div class="sdepartment">
+					<div class="depImg rounded-circle">
+						<img src="images/men-dep.jpg" alt="">
+					</div>
+					<div class="dep-text text-center">
+						<h4><span>Men</span></h4>
+					</div>
+				</div>
+				<div class="sdepartment">
+					<div class="depImg rounded-circle">
+						<img src="images/women-dep.jpg" alt="">
+					</div>
+					<div class="dep-text text-center">
+						<h4><span>Women</span></h4>
+					</div>
+				</div>
+				<div class="sdepartment">
+					<div class="depImg rounded-circle">
+						<img src="images/baby-dep.jpg" alt="">
+					</div>
+					<div class="dep-text text-center">
+						<h4><span>Baby</span></h4>
+					</div>
+				</div>
+				<div class="sdepartment">
+					<div class="depImg rounded-circle">
+						<img src="images/sports-dep.jpg" alt="">
+					</div>
+					<div class="dep-text text-center">
+						<h4><span>Sports</span></h4>
+					</div>
+				</div>
+				<div class="sdepartment">
+					<div class="depImg rounded-circle">
+						<img src="images/mpbile-dep.JPG" alt="">
+					</div>
+					<div class="dep-text text-center">
+						<h4><span>Mobile</span></h4>
+					</div>
+				</div>
+				<div class="sdepartment">
+					<div class="depImg rounded-circle">
+						<img src="images/pc-dep.jpg" alt="">
+					</div>
+					<div class="dep-text text-center">
+						<h4><span>Pc</span></h4>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
 
 
@@ -185,5 +295,6 @@
 
 	<script src="js/nav.js"></script>
 	<script src="js/main.js"></script>
+</body>
 
-	</html>
+</html>

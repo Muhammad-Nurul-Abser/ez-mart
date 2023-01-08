@@ -1,1 +1,114 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+.carousel {
+  width: 90%;
+  height: 23rem;
+  border-radius: 5px;
+}
+
+.carousel .imgdiv {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.carousel .imgdiv .carousel-item {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.carousel .imgdiv .carousel-item .carouselImage {
+  width: 100%;
+  height: 100%;
+}
+
+.carouselButton {
+  background-color: tomato;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 2px 12px 4px 12px;
+  border: 1px solid white;
+  text-decoration: none;
+}
+
+.carouselButton:hover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  color: black;
+  background-color: #347034;
+}
+
+@media screen and (max-width: 991px) {
+  .carousel {
+    width: 90%;
+    height: 18rem;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .carousel {
+    width: 90%;
+    height: 15rem;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .carousel {
+    width: 90%;
+    height: 12rem;
+    border-radius: 5px;
+  }
+}
+
+.sdepartment .depImg {
+  width: 8rem;
+  height: 8rem;
+  overflow: hidden;
+  border: 2px solid;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.sdepartment .depImg img {
+  width: 100%;
+  height: 100%;
+}
+
+.sdepartment .depImg:hover {
+  /* IE 9 */
+  -webkit-transform: scale(1.1);
+  /* Safari 3-8 */
+  transform: scale(1.1);
+}
+
+.sdepartment .dep-text {
+  width: 8rem;
+  height: 2rem;
+}
+
+@media screen and (max-width: 1199px) {
+  .sdepartment .depImg {
+    width: 6rem;
+    height: 6rem;
+    overflow: hidden;
+    border: 2px solid;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .sdepartment h4 {
+    font-size: 20px;
+  }
+  .sdepartment .dep-text {
+    width: 6rem;
+    height: 2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sdepartment {
+    margin-top: 5px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

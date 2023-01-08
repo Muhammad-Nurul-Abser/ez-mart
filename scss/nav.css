@@ -147,13 +147,13 @@ header .searchBar form .fa {
   top: -3px;
   right: 0;
   border-radius: 50%;
-  color: #07051a;
+  color: white;
   text-align: center;
   font-size: 1em;
   -webkit-transition: all 1s;
   transition: all 1s;
-  color: white;
-  background-color: #07051a;
+  color: black;
+  background-color: white;
 }
 
 header .searchBar form .fa:hover {
@@ -496,6 +496,7 @@ header .nav-bar .login-cart {
 
 header .nav-bar .login-cart li {
   list-style: none;
+  position: relative;
 }
 
 header .nav-bar .login-cart li a {
@@ -518,9 +519,26 @@ header .nav-bar .login-cart li a .login:hover {
           transform: translate(3px);
 }
 
-.indexMain {
-  width: 100%;
-  height: 30rem;
+header .nav-bar .login-cart li .cart-badge {
+  position: absolute;
+  top: -5px;
+  left: 45px;
+  color: white;
+  font-size: 12px;
+  padding: 1px 4px;
+  border: 0.5px solid white;
+  border-radius: 10px;
+  background-color: #0288e2;
+}
+
+header .nav-bar .login-cart li .user {
+  border-radius: 60px;
+  width: 33px;
+  height: 32px;
+  margin-top: -1px;
+  margin-left: 15px;
+  border: 3px solid #383f3f;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 1320px) {

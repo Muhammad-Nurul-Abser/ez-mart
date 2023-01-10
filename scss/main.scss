@@ -51,6 +51,9 @@
 
 }
 @media screen and (max-width: 767px) {
+    .carousel-section{
+        height: 15rem;
+    }
     .carousel {
         width: 90%;
         height: 15rem;
@@ -58,6 +61,9 @@
     }
 }
 @media screen and (max-width: 500px) {
+    .carousel-section{
+        height: 12rem;
+    }
     .carousel {
         width: 90%;
         height: 12rem;

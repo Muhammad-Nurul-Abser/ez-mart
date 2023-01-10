@@ -175,8 +175,9 @@
 }
 
 .box .feature-cardbox {
-  width: 17rem;
-  height: 22rem;
+  width: 10rem;
+  height: 12rem;
+  margin-top: 10px;
   border: 1px solid;
   overflow: hidden;
   -webkit-transition: all 0.5s;
@@ -219,7 +220,7 @@
   color: white;
   position: absolute;
   top: 0px;
-  left: 180px;
+  border-bottom-right-radius: 5px;
   background-color: red;
   padding: 5px 13px 7px;
 }
@@ -244,19 +245,6 @@
 
 .featurebox-text p:hover {
   color: tomato;
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s;
-}
-
-.featurebox-text .featureprice {
-  position: absolute;
-  top: 40px;
-  left: 12px;
-  width: 14.7rem;
-}
-
-.featurebox-text .featureprice:hover {
-  color: green;
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
 }

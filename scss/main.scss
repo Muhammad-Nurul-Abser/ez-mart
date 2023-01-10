@@ -173,8 +173,9 @@
 
 .box {
     .feature-cardbox{
-        width: 17rem;
-        height: 22rem;
+        width: 10rem;
+        height: 12rem;
+        margin-top: 10px;
         border: 1px solid;
         overflow: hidden;
         transition: all 0.5s;
@@ -210,7 +211,7 @@
         color: $color_1;
         position: absolute;
         top: 0px;
-        left: 180px;
+        border-bottom-right-radius: 5px;
         background-color: $background-color_6;
         padding: 5px 13px 7px;
     }
@@ -235,16 +236,16 @@
 			transition: all 0.25s;
 		}
 	}
-    .featureprice {
-        position: absolute;
-        top: 40px;
-        left: 12px;
-        width: 14.7rem;
-        &:hover {
-            color: $color_4;
-            transition: all 0.25s;
-        }
-    }
+    // .featureprice {
+    //     position: absolute;
+    //     top: 40px;
+    //     left: 12px;
+    //     width: 14.7rem;
+    //     &:hover {
+    //         color: $color_4;
+    //         transition: all 0.25s;
+    //     }
+    // }
 }
 
 

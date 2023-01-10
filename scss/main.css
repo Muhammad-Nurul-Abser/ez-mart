@@ -39,7 +39,10 @@
 }
 
 @media screen and (max-width: 991px) {
-  .carousel {
+  .carousel-section {
+    height: 18rem;
+  }
+  .carousel-section .carousel {
     width: 90%;
     height: 18rem;
     border-radius: 5px;

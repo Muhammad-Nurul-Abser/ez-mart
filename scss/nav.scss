@@ -629,6 +629,12 @@ header{
                     margin-top: 40px;
                     margin-right: 30px;
                 }
+                li{
+                    .cart-badge{
+                        top: -10px;
+                        left: 70px;
+                    }
+                }
             }
         }
         .nav-bar.active{

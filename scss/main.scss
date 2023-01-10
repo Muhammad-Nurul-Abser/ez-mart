@@ -40,11 +40,15 @@
 	}
 }
 @media screen and (max-width: 991px) {
-    .carousel {
-        width: 90%;
+    .carousel-section{
         height: 18rem;
-        border-radius: 5px;
+        .carousel {
+            width: 90%;
+            height: 18rem;
+            border-radius: 5px;
+        }
     }
+
 }
 @media screen and (max-width: 767px) {
     .carousel {

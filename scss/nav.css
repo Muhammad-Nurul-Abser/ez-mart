@@ -689,6 +689,10 @@ header .nav-bar .login-cart li .user {
     margin-top: 40px;
     margin-right: 30px;
   }
+  header .nav-bar .login-cart li .cart-badge {
+    top: -10px;
+    left: 70px;
+  }
   header .nav-bar.active {
     height: 450px;
   }
